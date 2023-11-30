@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Slideshow -->
+    <link rel="stylesheet" href="./slideshow/tiny-slider.css">
+
+    <!-- Facebook OG -->
+    <meta property="og: type" content="website">
+    <meta property="og: url" content="https://honorios.com.br">
+    <meta property="og: title" content="Honorios - Criação de sites">
+    <meta property="og: imagem" content="https://">
+    <meta property="og: description" content="Serviço de Criação de sites.">
+    <meta property="og: site_name" content="Honorios - Criação de sites">
+    <meta property="og: locale" content="pt_BR ">
+    <!-- Próximas tags são opcionais mas recomendado -->
+    <meta property="og: image: width" content="1200">
+    <meta property="og: imagem: altura" content="630">
+
+    <title>WHonorios - Construindo sonhos</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="imagem/png" href="icon.png" />
+</head>
+
+<body>
+    <script src="./slideshow/tiny-slider.js"></script>
+
+    <!--Menu -->
+    <header id="header">
+        <nav>
+            <div class="title-menu">
+                <a href="#_home">WHonorios</a>
+            </div>
+            <div class="menu-mobile">
+                <ul class="menu">
+                    <li><a href="#_projetos">Projetos</a></li>
+                    <li><a href="#_proposito">Propósito</a></li>
+                    <li><a href="#_redes_sociais">Redes sociais</a></li>
+                    <li><a href="#_contato">Contato</a></li>
+                </ul>
+            </div>
+            <span class="toggle material-icons menu-hamburger">menu</span>
+            <span class="toggle material-icons menu-x">close</span>
+        </nav>
+    </header>
+    <!--Fim -->
+
+    <!--SlideShow -->
+    <span id="_home"></span>
+    <section class="slideshow">
+        <div class="my-slider">
+            <div><img src="./slideshow/img/IMG1.png"></div>
+            <div><img src="./slideshow/img/IMG2.png"></div>
+        </div>
+        <script type="module">
+            var slider = tns({
+                container: '.my-slider',
+                items: 1, // Quantidade de itens que são exibidos ao mesmo tempo
+                slideBy: 'page',
+                edgePadding: 50,
+                speed: 400,
+                gutter: 30,
+                responsive: {
+                    700: {
+                        edgePadding: 0,
+                        fixedWidth: 500,
+                        speed: 400,
+                        gutter: 30,
+                    },
+                    900: {
+                        edgePadding: 0,
+                        fixedWidth: 750,
+                        speed: 400,
+                        gutter: 50,
+                    },
+                    1300: {
+                        edgePadding: 0,
+                        fixedWidth: 1000,
+                        speed: 400,
+                        gutter: 50,
+                    },
+                    1500: {
+                        edgePadding: 0,
+                        fixedWidth: 1300,
+                        speed: 400,
+                        gutter: 50,
+                    }
+                },
+                autoplay: true,
+                mouseDrag: true, // Seta se o carousel pode ser rotacionado com o movimento de clicar e arrastar do mouse
+                autoplayButtonOutput: false, // Seta visibilidade do botão de auto play
+                controls: false, // seta visibilidade das setas de controle
+                nav: false // Seta visibilidade da navegação (3 pontinhos)
+            });
+        </script>
+    </section>
+    <!--Fim -->
+
+    <main>
+        <div class="content">
+
+            <!--Projetos -->
+            <span id="_projetos"></span>
+            <section id="projetos">
+                <div class="box-section">
+                    <h2 class="title-pages">PROJETOS</h2>
+                    <div class="wrapper">
+                        <a href="#">
+                            <div class="description_project">
+                                <img class="img_project" src="./src/images/project1.png" />
+                                <figcaption>
+                                    <p class="project_name_bold style_p">Condomínio Capua</p>
+                                    <p class="project_location style_p">Região de Mairinque</p>
+                                    <p class="style_p">Preços a partir de:</p>
+                                    <p class="project_valor style_p">R$250.000,00</p>
+                                </figcaption>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="description_project">
+                                <img class="img_project" src="./src/images/project2.png" />
+                                <figcaption>
+                                    <p class="project_name_bold style_p">Condomínio Goiania</p>
+                                    <p class="project_location style_p">Goiania</p>
+                                    <p class="style_p">Preços a partir de:</p>
+                                    <p class="project_valor style_p">R$250.000,00</p>
+                                </figcaption>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="description_project">
+                                <img class="img_project" src="./src/images/project3.png" />
+                                <figcaption>
+                                    <p class="project_name_bold style_p">Casa de campo</p>
+                                    <p class="project_location style_p">Mairinque</p>
+                                    <p class="style_p">Preço:</p>
+                                    <p class="project_valor style_p">R$1.000.000.,00</p>
+                                </figcaption>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Fim -->
+
+            <!--Contato -->
+            <span id="_contato"></span>
+            <section id="contato">
+                <div class="box-section box-color-gradient">
+                    <p class="p-subtitle-contato">Tem interesse em algum projeto ou gostaria de conhecer outros imóveis?
+                    </p>
+                    <h2>Entre em contato clicando no botão abaixo.</h2>
+                    <a href="https://api.whatsapp.com/send?phone=5511973938307&text=Gostaria%20de%20solicitar%20um%20servi%C3%A7o%20de%20Cria%C3%A7%C3%A3o%20de%20Sites."
+                        target="_blank" rel="noopener">
+                        <div class="buttom-contato">
+                            <p>Contato</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!--Fim -->
+
+        </div>
+    </main>
+
+    <!--Footer -->
+    <footer>
+        <div id="box-color-footer" class="footer box-section box-color-black">
+            <div class="full-width-footer">
+                <div id="linha">
+                    <div class="grid-footer">
+                        <div>
+                            <p class="p-subtitle-footer">CONQUISTE SEU SONHO E INVISTA NO SEU FUTURO.</p>
+                            <h2>Imóveis é com a <a href="#_home">WHonorios</a></h2>
+                        </div>
+                        <div>
+                            <div class="menu-footer">
+                                <p><a href="#_home">Projetos</a></p>
+                                <p><a href="#_proposito">Propósito</a></p>
+                                <p><a href="#_redes_sociais">Redes Sociais</a></p>
+                                <p><a href="#_contato">Contato</a></p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="p-subtitle-email-footer">Dúvidas? Fala conosco</p>
+                            <p class="email-footer"><a href="tel:+5511956878167">(11) 9 5687 - 8167</a>
+                            </p>
+                        </div>
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-copyright-footer">
+                    <p class="p-copyright-footer">© 2023 <a href="https://whonorios.com.br"
+                            rel="noopener">WHonorios.</a> Todos os direitos reservados. Desenvolvido por <a
+                            href="https://honorios.com.br" target="_blank" rel="noopener">Honorios.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Fim -->
+
+    </div>
+
+    <!--WhatsApp -->
+
+    <a href="#_home" class="back-to-top">
+        <span class="material-icons">
+            arrow_upward</span>
+    </a>
+    <link rel="stylesheet" href="./style/whatsapp-button.css">
+    <a id="robbu-whatsapp-button" class="left" target="_blank"
+        href="https://api.whatsapp.com/send?phone=5511973938307&text=Gostaria%20de%20solicitar%20um%20servi%C3%A7o%20de%20Cria%C3%A7%C3%A3o%20de%20Sites.">
+        <div class="rwb-tooltip">Converse Conosco</div>
+        <img src="./src/images/whatsapp-icon.svg">
+    </a>
+    </a>
+    <!--Fim -->
+
+</body>
+<script src="./js/main.js"></script>
+
+</html>
