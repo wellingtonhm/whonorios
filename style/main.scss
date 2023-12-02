@@ -373,13 +373,13 @@ nav .menu-x.show {
 .project_name_bold {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .project_valor {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .project_location {
@@ -419,6 +419,8 @@ figcaption {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 /* REDE SOCIAL */
@@ -621,8 +623,8 @@ figcaption {
 
     .grid-footer {
 
-        grid-template-columns: 2fr 1fr 1fr;
-        column-gap: 6rem;
+        grid-template-columns: 2fr 1fr 2fr;
+        column-gap: 5rem;
     }
 
     /* PROJETOS */
