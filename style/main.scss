@@ -181,7 +181,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 1.625rem 10rem;
+    padding: 1.625rem 5rem;
     align-items: center;
 
     ul li {
@@ -426,8 +426,9 @@ figcaption {
 /* REDE SOCIAL */
 .wrapper-redes {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     text-align: center;
+    justify-content: center;
 }
 
 .wrapper-redes-imagens {
@@ -661,8 +662,10 @@ figcaption {
 
     .wrapper-proposito {
         display: grid;
-        grid-template-columns: 15% 1fr 1fr 15%;
-        grid-column-gap: 5em;
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-column-gap: 2em;
+        margin-left: 0em;
+        margin-right: 0em;
     }
 
     .wrapper-redes {

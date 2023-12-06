@@ -56,46 +56,40 @@
         <div class="my-slider">
             <div><img src="./slideshow/img/IMG1.png"></div>
             <div><img src="./slideshow/img/IMG2.png"></div>
+            <div><img src="./slideshow/img/IMG1.png"></div>
         </div>
         <script type="module">
             var slider = tns({
                 container: '.my-slider',
                 items: 1, // Quantidade de itens que são exibidos ao mesmo tempo
                 slideBy: 'page',
-                edgePadding: 0,
+                edgePadding: 100,
                 speed: 400,
-                gutter: 30,
-                responsive: {
-                    700: {
-                        edgePadding: 0,
-                        fixedWidth: 500,
-                        speed: 400,
-                        gutter: 30,
-                    },
-                    900: {
-                        edgePadding: 0,
-                        fixedWidth: 750,
-                        speed: 400,
-                        gutter: 50,
-                    },
-                    1300: {
-                        edgePadding: 0,
-                        fixedWidth: 1000,
-                        speed: 400,
-                        gutter: 50,
-                    },
-                    1500: {
-                        edgePadding: 0,
-                        fixedWidth: 1300,
-                        speed: 400,
-                        gutter: 50,
-                    }
-                },
+                gutter: 10,
                 autoplay: true,
                 mouseDrag: true, // Seta se o carousel pode ser rotacionado com o movimento de clicar e arrastar do mouse
                 autoplayButtonOutput: false, // Seta visibilidade do botão de auto play
                 controls: false, // seta visibilidade das setas de controle
-                nav: false // Seta visibilidade da navegação (3 pontinhos)
+                nav: false, // Seta visibilidade da navegação (3 pontinhos)
+                responsive: {
+                    400: {
+                        fixedWidth: 300,
+                        edgePadding: 0
+                    },
+                    600: {
+                        fixedWidth: 500,
+                        edgePadding: 0
+                    },
+                    1300: {
+                        fixedWidth: 700
+                    },
+                    1600: {
+                        fixedWidth: 800
+                    },
+                    1900: {
+                        fixedWidth: 900
+                    }
+                }
             });
         </script>
     </section>
@@ -105,7 +99,6 @@
         <div class="content">
 
             <!--Projetos -->
-
             <section id="projetos">
                 <div class="box-section">
                     <span id="_projetos"></span>
