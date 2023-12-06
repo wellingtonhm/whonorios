@@ -390,6 +390,18 @@ figcaption {
   margin-right: 3em;
 }
 
+.wrapper-proposito h3 {
+  text-align: center;
+}
+
+/* DIFERENCIAL */
+.diferencial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+}
+
 /* REDE SOCIAL */
 .wrapper-redes {
   display: grid;
@@ -605,6 +617,17 @@ figcaption {
     margin-left: 0em;
     margin-right: 0em;
   }
+  .wrapper-proposito h3 {
+    text-align: center;
+  }
+  /* DIFERENCIAL */
+  .diferencial-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+  }
+  /* REDE SOCIAL */
   .wrapper-redes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
