@@ -150,6 +150,10 @@ body {
   text-align: center;
 }
 
+.subtitle-pages {
+  text-align: center;
+}
+
 /* MENU */
 .title-menu {
   font-family: "Work Sans", sans-serif;
@@ -394,6 +398,12 @@ figcaption {
   text-align: center;
 }
 
+.wrapper-imagens-avulsas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 3em;
+}
+
 /* DIFERENCIAL */
 .diferencial-grid {
   display: grid;
@@ -413,6 +423,12 @@ figcaption {
 .wrapper-redes-imagens {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.3em;
+}
+
+.wrapper-projeto-imagens {
+  display: grid;
+  grid-template-columns: 1fr;
   grid-gap: 0.3em;
 }
 
@@ -536,6 +552,9 @@ figcaption {
   .title-pages {
     text-align: center;
   }
+  .subtitle-pages {
+    text-align: center;
+  }
   /* STRUCTURE */
   .box-section {
     padding-top: 4.5rem;
@@ -620,6 +639,11 @@ figcaption {
   .wrapper-proposito h3 {
     text-align: center;
   }
+  .wrapper-imagens-avulsas {
+    display: grid;
+    grid-template-columns: 10% 2fr 1fr 10%;
+    grid-column-gap: 2em;
+  }
   /* DIFERENCIAL */
   .diferencial-grid {
     display: grid;
@@ -634,6 +658,12 @@ figcaption {
     text-align: center;
   }
   .wrapper-redes-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.3em;
+    margin: 5em;
+  }
+  .wrapper-projeto-imagens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.3em;
